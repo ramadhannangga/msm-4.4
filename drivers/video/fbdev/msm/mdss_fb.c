@@ -90,6 +90,7 @@ extern bool lcd_suspend_flag;
 static void asus_lcd_early_unblank_func(struct work_struct *);
 static struct workqueue_struct *asus_lcd_early_unblank_wq;
 extern int g_resume_from_fp;
+#endif
 
 #define MDSS_BRIGHT_TO_BL_DIM(out, v) do {\
 			out = (12*v*v+1393*v+3060)/4465;\
