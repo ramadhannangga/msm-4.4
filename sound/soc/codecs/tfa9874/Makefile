@@ -41,3 +41,4 @@ snd-soc-tfa9874-objs += tfa_debug.o
 endif
 
 obj-$(CONFIG_SND_SOC_TFA9874) := snd-soc-tfa9874.o
+CFLAGS_tfa_dsp.o += $(call cc-disable-warning, enum-conversion)
