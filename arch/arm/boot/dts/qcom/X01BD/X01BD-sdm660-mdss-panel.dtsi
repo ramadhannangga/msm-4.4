@@ -10,10 +10,6 @@
  * GNU General Public License for more details.
  */
 
-#include "dsi-panel-auo-ft8716f-5p9-fhd-video.dtsi"
-#include "dsi-panel-nt36672-1080p-video-txd.dtsi"
-#include "dsi-panel-nt36672-1080p-video.dtsi"
-#include "dsi-panel-td4310-1080p-video-txd.dtsi"
 #include "dsi-panel-hx83112a-1080p-video-tm.dtsi"
 #include "dsi-panel-nt36672ah-1080p-video-kd.dtsi"
 
@@ -31,27 +27,6 @@
 	qcom,panel-supply-entry@0 {
 	qcom,supply-pre-off-sleep = <2>;
 	};
-};
-
-&mdss_dsi0 {
-	qcom,dsi-pref-prim-pan = <&dsi_nt36672_1080p_video_txd>;
-};
-
-&mdss_dsi1 {
-	status = "disabled";
-	qcom,dsi-pref-prim-pan = <&dsi_nt36672_1080p_video_txd>;
-};
-
-&dsi_nt36672_1080p_video_txd {
-  qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
-};
-
-&dsi_nt36672_1080p_video {
-  qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
-};
-
-&dsi_td4310_1080p_video_txd {
-	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
 };
 
 &mdss_mdp {
@@ -95,13 +70,6 @@
 	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
 	qcom,mdss-dsi-bl-min-level = <1>;
 	qcom,mdss-dsi-bl-max-level = <4095>;
-	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
-};
-
-&dsi_nt36672_1080p_video_txd {
-	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
-};
-&dsi_nt36672_1080p_video {
 	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
 };
 
