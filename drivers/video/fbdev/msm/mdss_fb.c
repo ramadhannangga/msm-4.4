@@ -56,6 +56,7 @@
 #include "mdss_smmu.h"
 #include "mdss_mdp.h"
 
+#ifdef CONFIG_WAKELOCK
 #include <linux/wakelock.h>
 #endif
 
