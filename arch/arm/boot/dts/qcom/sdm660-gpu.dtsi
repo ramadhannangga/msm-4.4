@@ -64,6 +64,7 @@
 		interrupts = <0 300 0>;
 		interrupt-names = "kgsl_3d0_irq";
 		qcom,id = <0>;
+		#cooling-cells = <2>;
 
 		qcom,chipid = <0x05010200>;
 
