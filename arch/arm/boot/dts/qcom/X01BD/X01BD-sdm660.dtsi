@@ -134,11 +134,6 @@
 			qcom,fg-rsense-sel=<1>;
 			qcom,ibat-polling-delay-ms = <100>;
 		};
-		
-		pm660_haptics: qcom,haptics {
-			qcom,actuator-type = <1>;
-			qcom,vmax-mv = <2800>;
-		};
 	};
 
 	qcom,pm660l@2 {
