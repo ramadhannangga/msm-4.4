@@ -639,7 +639,7 @@
 			qcom,pmic-revid = <&pm660_revid>;
 			qcom,pmic-misc = <&pm660_misc>;
 			qcom,misc-clk-trim-error-reg = <0xf3>;
-			qcom,actuator-type = <1>;
+			qcom,actuator-type = <0>;
 			qcom,play-mode = "direct";
 			qcom,vmax-mv = <3200>;
 			qcom,ilim-ma = <800>;
