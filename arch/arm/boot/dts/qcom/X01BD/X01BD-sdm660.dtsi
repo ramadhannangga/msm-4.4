@@ -137,7 +137,7 @@
 		
 		pm660_haptics: qcom,haptics {
 			qcom,actuator-type = <1>;
-			qcom, vmax-mv = <2800>;
+			qcom,vmax-mv = <2800>;
 		};
 	};
 
