@@ -876,14 +876,6 @@
 		pinctrl-1 = <&ter_mi2s_clk_sleep &ter_mi2s_ws_sleep
 			&ter_mi2s_sd0_sleep &ter_mi2s_sd1_sleep>;
 		qcom,lpi-gpios;
-	};
-};
-
-&spmi_bus {
-	qcom,pm660@1 {
-		pm660_haptics: qcom,haptic@c000 {
-			qcom,actuator-type = <1>;
-			qcom,vmax-mv = <2800>;
 		};
 	};
 };
